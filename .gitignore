@@ -1,0 +1,14 @@
+# NodeJS
+node_modules/
+
+# webpack
+dist/
+
+# vim
+*~
+*.swp
+*.swo
+
+# MacOS
+.DS_Store
+

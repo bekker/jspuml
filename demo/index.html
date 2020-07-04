@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>JsPuml Demo</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+</head>
+
+<body>
+    <h1>JsPuml Demo</h1>
+    <p id="msg"></p>
+    <script src="../dist/jspuml.js"></script>
+    <script>
+        var puml = new Puml();
+        document.getElementById('msg').innerText = puml.getMessage();
+    </script>
+</body>
+</html>
