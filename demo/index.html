@@ -11,11 +11,16 @@
 
 <body>
     <h1>JsPuml Demo</h1>
-    <p id="msg"></p>
+    <div id="puml"></div>
+
     <script src="../dist/jspuml.js"></script>
     <script>
-        var puml = new Puml();
-        document.getElementById('msg').innerText = puml.getMessage();
+        var puml = new Puml({
+            emit: {
+                containerSelector: '#puml'
+            }
+        });
+        puml.draw("Hello, World!");
     </script>
 </body>
 </html>
